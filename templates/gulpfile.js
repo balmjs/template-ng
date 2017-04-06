@@ -19,7 +19,8 @@ balm.config = {
     }
   },
   styles: {
-    ext: 'css' // PostCSS
+    ext: 'css', // PostCSS
+    autoprefixer: ['last 2 versions']
   },
   scripts: {
     entry: config.entry,
