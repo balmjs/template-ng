@@ -13,8 +13,8 @@ balm.config = {
   },
   paths: {
     source: {
-      css: 'css',
-      js: 'js',
+      css: 'styles',
+      js: 'scripts',
       img: 'images'
     }
   },

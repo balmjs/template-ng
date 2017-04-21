@@ -18,7 +18,7 @@ module.exports = {
       '@angular/forms',
       '@angular/http'
     ],
-    main: './app/js/main.ts' // entry js file
+    main: './app/scripts/main.ts' // entry js file
   },
   vendors: ['polyfill', 'angular'],
   assets: {
