@@ -22,7 +22,7 @@
   "devDependencies": {
     "@types/node": "~6.0.60",
     "angular2-template-loader": "^0.6.2",
-    "balm": "^0.6.0-beta.5",
+    "balm": "^0.6.0-beta.6",
     "gulp": "^3.9.1",
     "ts-loader": "^2.0.0",
     "tslint": "~4.5.0",
