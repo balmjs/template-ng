@@ -26,13 +26,13 @@ balm.config = {
     entry: config.entry,
     vendors: config.vendors,
     loaders: [{
-      test: /\.tsx?$/,
+      test: /\.ts$/,
       use: [
         'ts-loader',
         'angular2-template-loader'
       ]
     }],
-    extensions: ['.ts', '.tsx'],
+    extensions: ['.ts'],
     plugins: [
       // Workaround for angular/angular#11580
       new webpack.ContextReplacementPlugin(
@@ -49,7 +49,7 @@ balm.go(function(mix) {
   if (balm.config.production) {
     // for static
     mix.publish();
-    // for html
+    // for template
     Object.keys(config.publish).forEach(function(key) {
       mix.publish(key, config.publish[key].target, config.publish[key].option || {});
     });
