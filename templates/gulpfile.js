@@ -24,7 +24,6 @@ balm.config = {
   },
   scripts: {
     entry: config.entry,
-    vendors: config.vendors,
     loaders: [{
       test: /\.ts$/,
       use: [
@@ -43,6 +42,8 @@ balm.config = {
   },
   cache: true,
   assets: config.assets
+  // More Config
+  // https://github.com/balmjs/balm/blob/master/docs/configuration.md
 };
 
 balm.go(function(mix) {

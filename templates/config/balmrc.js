@@ -20,7 +20,6 @@ module.exports = {
     ],
     main: './app/scripts/main.ts' // entry js file
   },
-  vendors: ['polyfill', 'angular'],
   assets: {
     root: 'assets', // replace 'assets' to your remote project root
     publicPath: 'public'
