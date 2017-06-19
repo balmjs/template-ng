@@ -20,7 +20,11 @@ balm.config = {
   },
   styles: {
     ext: 'css', // PostCSS
-    autoprefixer: ['last 2 versions']
+    autoprefixer: [
+      '> 1%',
+      'last 2 versions',
+      'not ie <= 8'
+    ]
   },
   scripts: {
     entry: config.entry,
@@ -48,9 +52,9 @@ balm.config = {
 
 balm.go(function(mix) {
   if (balm.config.production) {
-    // for static
+    // Publish assets
     mix.publish();
-    // for template
+    // Publish templates
     Object.keys(config.publish).forEach(function(key) {
       mix.publish(key, config.publish[key].target, config.publish[key].option || {});
     });
