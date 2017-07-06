@@ -1,62 +1,16 @@
 var balm = require('balm');
-var webpack = require('webpack');
-var helpers = require('./config/helpers');
 var config = require('./config/balmrc');
+var templates = require('./config/publish');
 
-balm.config = {
-  server: {
-    open: true,
-    proxyTable: config.proxyTable
-  },
-  roots: {
-    source: 'app'
-  },
-  paths: {
-    source: {
-      css: 'styles',
-      js: 'scripts',
-      img: 'images'
-    }
-  },
-  styles: {
-    ext: 'css', // PostCSS
-    autoprefixer: [
-      '> 1%',
-      'last 2 versions',
-      'not ie <= 8'
-    ]
-  },
-  scripts: {
-    entry: config.entry,
-    loaders: [{
-      test: /\.ts$/,
-      use: [
-        'ts-loader',
-        'angular2-template-loader'
-      ]
-    }],
-    extensions: ['.ts'],
-    plugins: [
-      // Workaround for angular/angular#11580
-      new webpack.ContextReplacementPlugin(
-        /@angular\b.*\b(bundles|linker)/,
-        helpers.root('./app')
-      )
-    ]
-  },
-  cache: true,
-  assets: config.assets
-  // More Config
-  // https://github.com/balmjs/balm/blob/master/docs/configuration.md
-};
+balm.config = config;
 
 balm.go(function(mix) {
   if (balm.config.production) {
     // Publish assets
     mix.publish();
     // Publish templates
-    Object.keys(config.publish).forEach(function(key) {
-      mix.publish(key, config.publish[key].target, config.publish[key].option || {});
+    Object.keys(templates).forEach(function(key) {
+      mix.publish(key, templates[key].target, templates[key].option || {});
     });
   }
 });
