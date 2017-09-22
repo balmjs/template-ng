@@ -26,7 +26,7 @@ module.exports = {
     autoprefixer: [
       '> 1%',
       'last 2 versions',
-      'not ie <= 8'
+      'not ie < 9'
     ]
   },
   scripts: {
@@ -36,7 +36,7 @@ module.exports = {
         'core-js/es7/reflect',
         'zone.js/dist/zone'
       ],
-      angular: [
+      ng: [
         '@angular/core',
         '@angular/platform-browser-dynamic',
         '@angular/platform-browser',
