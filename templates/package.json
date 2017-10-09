@@ -17,15 +17,15 @@
     "@angular/router": "^4.0.0",
     "core-js": "^2.5.1",
     "rxjs": "^5.4.3",
-    "zone.js": "^0.8.17"
+    "zone.js": "^0.8.18"
   },
   "devDependencies": {
-    "@types/node": "~8.0.29",
+    "@types/node": "~8.0.33",
     "angular2-template-loader": "^0.6.2",
-    "balm": "^0.9.1",
+    "balm": "^0.10.1",
     "gulp": "^3.9.1",
     "ts-loader": "^2.3.7",
     "tslint": "~5.7.0",
-    "typescript": "~2.5.2"
+    "typescript": "~2.5.3"
   }
 }
