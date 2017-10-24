@@ -16,16 +16,16 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "core-js": "^2.5.1",
-    "rxjs": "^5.4.3",
+    "rxjs": "^5.5.0",
     "zone.js": "^0.8.18"
   },
   "devDependencies": {
     "@types/node": "~8.0.33",
     "angular2-template-loader": "^0.6.2",
-    "balm": "^0.10.1",
+    "balm": "^0.10.3",
     "gulp": "^3.9.1",
-    "ts-loader": "^2.3.7",
-    "tslint": "~5.7.0",
+    "ts-loader": "^3.0.5",
+    "tslint": "~5.8.0",
     "typescript": "~2.5.3"
   }
 }
