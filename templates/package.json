@@ -7,25 +7,27 @@
     "prod": "gulp --production"
   },
   "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/forms": "^4.0.0",
-    "@angular/http": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0",
+    "@angular/animations": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
+    "@angular/http": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@angular/router": "^5.0.0",
     "core-js": "^2.5.1",
-    "rxjs": "^5.5.0",
+    "rxjs": "^5.5.2",
     "zone.js": "^0.8.18"
   },
   "devDependencies": {
-    "@types/node": "~8.0.33",
+    "@types/node": "~8.0.47",
     "angular2-template-loader": "^0.6.2",
     "balm": "^0.10.3",
+    "codelyzer": "~4.0.0",
     "gulp": "^3.9.1",
-    "ts-loader": "^3.0.5",
+    "ts-loader": "^3.1.1",
     "tslint": "~5.8.0",
-    "typescript": "~2.5.3"
+    "typescript": "~2.6.1"
   }
 }

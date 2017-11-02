@@ -61,6 +61,9 @@ module.exports = {
       )
     ]
   },
+  extras: {
+    excludes: ['tsconfig.app.json']
+  },
   cache: true,
   assets: {
     root: 'assets', // Replace 'assets' to your remote project root
