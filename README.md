@@ -8,9 +8,9 @@ npm install -g balm-cli
 balm init ng my-project
 
 cd my-project
-yarn install
+yarn
 # or
-npm install
+npm i
 ```
 
 ## Enjoy
