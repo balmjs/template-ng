@@ -23,11 +23,7 @@ module.exports = {
   },
   styles: {
     ext: 'css', // PostCSS
-    autoprefixer: [
-      '> 1%',
-      'last 2 versions',
-      'not ie < 9'
-    ]
+    autoprefixer: ['> 1%', 'last 2 versions', 'not ie < 9']
   },
   scripts: {
     entry: {
@@ -45,13 +41,12 @@ module.exports = {
       ],
       main: './app/scripts/main.ts' // Entry js file
     },
-    loaders: [{
-      test: /\.ts$/,
-      use: [
-        'ts-loader',
-        'angular2-template-loader'
-      ]
-    }],
+    loaders: [
+      {
+        test: /\.ts$/,
+        use: ['ts-loader', 'angular2-template-loader']
+      }
+    ],
     extensions: ['.ts'],
     plugins: [
       // Workaround for angular/angular#11580
