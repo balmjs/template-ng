@@ -1,3 +1,5 @@
+// Documentation - http://balmjs.com/docs/en/configuration/toc.html
+// 中文文档 - http://balmjs.com/docs/zh-cn/configuration/toc.html
 var webpack = require('webpack');
 var helpers = require('./helpers');
 
@@ -44,15 +46,15 @@ module.exports = {
     loaders: [
       {
         test: /\.ts$/,
-        use: ['ts-loader', 'angular2-template-loader']
+        use: ['awesome-typescript-loader', 'angular2-template-loader']
       }
     ],
     extensions: ['.ts'],
     plugins: [
-      // Workaround for angular/angular#11580
       new webpack.ContextReplacementPlugin(
-        /@angular\b.*\b(bundles|linker)/,
-        helpers.root('./app')
+        // The (\\|\/) piece accounts for path separators in *nix and Windows
+        /\@angular(\\|\/)core(\\|\/)bundles/,
+        helpers.root('app') // location of your src
       )
     ]
   },
@@ -65,6 +67,4 @@ module.exports = {
     publicPath: 'public'
   }
   // More Config
-  // Documentation - http://balmjs.com/docs/en/configuration/toc.html
-  // 中文文档 - http://balmjs.com/docs/zh-cn/configuration/toc.html
 };
