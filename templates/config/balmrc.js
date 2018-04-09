@@ -6,11 +6,10 @@ var helpers = require('./helpers');
 module.exports = {
   server: {
     open: true,
-    proxyTable: {
-      '/api': {
-        target: 'http://your.project.dev',
-        changeOrigin: true
-      }
+    proxyContext: '/api',
+    proxyOptions: {
+      target: 'http://your.project.dev',
+      changeOrigin: true
     }
   },
   roots: {
@@ -30,30 +29,25 @@ module.exports = {
   scripts: {
     entry: {
       polyfill: [
-        'core-js/es6/reflect',
-        'core-js/es7/reflect',
-        'zone.js/dist/zone'
+        'core-js',
+        'zone.js'
       ],
       ng: [
-        '@angular/core',
-        '@angular/platform-browser-dynamic',
-        '@angular/platform-browser',
-        '@angular/forms',
-        '@angular/http'
+        '@angular'
       ],
       main: './app/scripts/main.ts' // Entry js file
     },
     loaders: [
       {
         test: /\.ts$/,
-        use: ['awesome-typescript-loader', 'angular2-template-loader']
+        use: ['ts-loader', 'angular2-template-loader']
       }
     ],
     extensions: ['.ts'],
     plugins: [
       new webpack.ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
-        /\@angular(\\|\/)core(\\|\/)bundles/,
+        /\@angular(\\|\/)core(\\|\/)/,
         helpers.root('app') // location of your src
       )
     ]
