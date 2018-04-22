@@ -28,13 +28,8 @@ module.exports = {
   },
   scripts: {
     entry: {
-      polyfill: [
-        'core-js',
-        'zone.js'
-      ],
-      ng: [
-        '@angular'
-      ],
+      polyfill: ['core-js', 'zone.js'],
+      ng: ['@angular'],
       main: './app/scripts/main.ts' // Entry js file
     },
     loaders: [
