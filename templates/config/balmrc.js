@@ -24,7 +24,7 @@ module.exports = {
   },
   styles: {
     ext: 'css', // PostCSS
-    autoprefixer: ['> 1%', 'last 2 versions', 'not ie < 9']
+    autoprefixer: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'IE 9-11']
   },
   scripts: {
     entry: {
