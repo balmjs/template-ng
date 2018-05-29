@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import './hello.css';
 
-const URL = require('../../../images/angular.svg');
+const URL = require('../../assets/angular.svg');
 
 @Component({
   selector: 'app-root',
