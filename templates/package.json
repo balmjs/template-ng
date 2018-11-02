@@ -7,27 +7,27 @@
     "prod": "gulp --silent --production"
   },
   "dependencies": {
-    "@angular/animations": "^6.1.7",
-    "@angular/common": "^6.1.7",
-    "@angular/compiler": "^6.1.7",
-    "@angular/core": "^6.1.7",
-    "@angular/forms": "^6.1.7",
-    "@angular/http": "^6.1.7",
-    "@angular/platform-browser": "^6.1.7",
-    "@angular/platform-browser-dynamic": "^6.1.7",
-    "@angular/router": "^6.1.7",
+    "@angular/animations": "^7.0.2",
+    "@angular/common": "^7.0.2",
+    "@angular/compiler": "^7.0.2",
+    "@angular/core": "^7.0.2",
+    "@angular/forms": "^7.0.2",
+    "@angular/http": "^7.0.2",
+    "@angular/platform-browser": "^7.0.2",
+    "@angular/platform-browser-dynamic": "^7.0.2",
+    "@angular/router": "^7.0.2",
     "core-js": "^2.5.7",
-    "rxjs": "^6.3.2",
+    "rxjs": "^6.3.3",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
-    "@types/node": "~10.9.4",
+    "@types/node": "~10.12.2",
     "angular2-template-loader": "^0.6.2",
-    "balm": "^0.24.2",
-    "codelyzer": "~4.4.4",
+    "balm": "^0.24.6",
+    "codelyzer": "~4.5.0",
     "gulp": "^3.9.1",
-    "ts-loader": "^5.1.1",
+    "ts-loader": "^5.3.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.0.3"
+    "typescript": "~3.1.6"
   }
 }
