@@ -1,7 +1,7 @@
 // Documentation - http://balmjs.com/docs/en/configuration/toc.html
 // 中文文档 - http://balmjs.com/docs/zh-cn/configuration/toc.html
-var webpack = require('webpack');
-var helpers = require('./helpers');
+const webpack = require('webpack');
+const helpers = require('./helpers');
 
 module.exports = {
   server: {
@@ -52,7 +52,7 @@ module.exports = {
   cache: true,
   assets: {
     root: 'assets', // Replace 'assets' to your remote project root
-    publicPath: 'public'
+    mainDir: 'public'
   }
   // More Config
 };
