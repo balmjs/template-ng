@@ -1,8 +1,9 @@
-// Documentation - http://balmjs.com/docs/en/configuration/toc.html
-// 中文文档 - http://balmjs.com/docs/zh-cn/configuration/toc.html
+const path = require('path');
 const webpack = require('webpack');
 const helpers = require('./helpers');
 
+// Documentation - http://balmjs.com/docs/en/configuration/toc.html
+// 中文文档 - http://balmjs.com/docs/zh-cn/configuration/toc.html
 module.exports = {
   server: {
     open: true,
@@ -23,7 +24,13 @@ module.exports = {
   },
   styles: {
     ext: 'css', // PostCSS
-    autoprefixer: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'IE 9-11']
+    autoprefixer: [
+      '> 0.5%',
+      'last 2 versions',
+      'Firefox ESR',
+      'not dead',
+      'IE 9-11'
+    ]
   },
   scripts: {
     entry: {
@@ -37,7 +44,9 @@ module.exports = {
         use: ['ts-loader', 'angular2-template-loader']
       }
     ],
-    extensions: ['.ts'],
+    alias: {
+      '@': path.resolve(__dirname, '..', 'app', 'scripts')
+    },
     plugins: [
       new webpack.ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
