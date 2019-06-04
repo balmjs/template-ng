@@ -23,14 +23,7 @@ module.exports = {
     }
   },
   styles: {
-    ext: 'css', // PostCSS
-    autoprefixer: [
-      '> 0.5%',
-      'last 2 versions',
-      'Firefox ESR',
-      'not dead',
-      'IE 9-11'
-    ]
+    ext: 'css' // PostCSS
   },
   scripts: {
     entry: {
