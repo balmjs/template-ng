@@ -1,7 +1,7 @@
 {
   "name": "my-ng-app",
-  "version": "4.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A Angular project",
   "scripts": {
     "dev": "gulp --silent",
     "prod": "gulp --silent --production"
@@ -15,18 +15,19 @@
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
-    "core-js": "^3.1.3",
+    "core-js": "^3.1.4",
     "rxjs": "~6.5.2",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@types/node": "~12.0.4",
+    "@types/node": "~12.0.10",
     "angular2-template-loader": "^0.6.2",
-    "balm": "^1.5.1",
+    "balm": "^1.5.7",
     "codelyzer": "^5.1.0",
     "gulp": "^4.0.2",
-    "ts-loader": "^6.0.2",
-    "tslint": "~5.17.0",
-    "typescript": "~3.5.1"
-  }
+    "ts-loader": "^6.0.4",
+    "tslint": "~5.18.0",
+    "typescript": "~3.5.2"
+  },
+  "private": true
 }
