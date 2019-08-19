@@ -46,10 +46,15 @@ module.exports = {
         /\@angular(\\|\/)core(\\|\/)/,
         helpers.root('app') // location of your src
       )
-    ]
-  },
-  extras: {
-    excludes: ['tsconfig.app.json']
+    ],
+    stats: {
+      colors: true,
+      modules: false,
+      children: false,
+      chunks: false,
+      chunkModules: false,
+      warningsFilter: /System.import/
+    }
   },
   cache: true,
   assets: {
