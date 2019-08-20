@@ -1,7 +1,8 @@
 {
-  "name": "my-ng-app",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "A Angular project",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
   "scripts": {
     "dev": "gulp --silent",
     "prod": "gulp --silent --production"
