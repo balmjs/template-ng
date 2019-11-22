@@ -9,8 +9,6 @@ balm.go(mix => {
     // Publish assets
     mix.publish();
     // Publish templates
-    Object.keys(templates).forEach(key => {
-      mix.publish(key, templates[key].target, templates[key].option || {});
-    });
+    mix.publish(templates);
   }
 });
