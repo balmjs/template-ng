@@ -33,6 +33,9 @@ module.exports = {
         use: ['ts-loader', 'angular2-template-loader']
       }
     ],
+    urlLoaderOptions: {
+      esModule: false
+    },
     alias: {
       '@': path.resolve(__dirname, '..', 'app', 'scripts')
     },

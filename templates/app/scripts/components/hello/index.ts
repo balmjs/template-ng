@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import './hello.css';
 
-const URL = require('@/assets/angular.svg');
+const logo = require('@/assets/angular.svg');
 
 @Component({
   selector: 'app-root',
@@ -14,6 +14,6 @@ export class AppComponent {
 
   constructor(private sanitizer: DomSanitizer) {
     this.title = 'Angular';
-    this.logo = sanitizer.bypassSecurityTrustResourceUrl(URL);
+    this.logo = sanitizer.bypassSecurityTrustResourceUrl(logo);
   }
 }
