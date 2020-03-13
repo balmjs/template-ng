@@ -21,14 +21,14 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@types/node": "^13.7.6",
+    "@types/node": "^13.9.1",
     "angular2-template-loader": "^0.6.2",
-    "balm": "^2.8.0",
+    "balm": "^2.9.0",
     "codelyzer": "^5.2.1",
     "gulp": "^4.0.2",
     "ts-loader": "^6.2.1",
     "tslint": "~6.0.0",
-    "typescript": "~3.8.2"
+    "typescript": "~3.8.3"
   },
   "private": true
 }

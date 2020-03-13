@@ -1,4 +1,4 @@
-# BalmJS template - ng
+# BalmJS template - `ng`
 
 > An Angular project
 
@@ -24,4 +24,4 @@ npm run dev
 npm run prod
 ```
 
-> thx [BalmJS](https://balmjs.com/)
+- thx [BalmJS](https://balmjs.com/)
