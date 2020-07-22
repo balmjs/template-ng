@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import './hello.css';
 
 const logo = require('@/assets/angular.svg');
 
 @Component({
   selector: 'app-root',
-  templateUrl: './hello.html'
+  template: require('./hello.html'),
+  styles: [require('./hello.css')]
 })
 export class AppComponent {
   title: string;

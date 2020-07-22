@@ -27,10 +27,21 @@ module.exports = {
       ng: ['@angular'],
       main: './app/scripts/main.ts' // Entry js file
     },
+    defaultLoaders: {
+      html: false,
+      css: false
+    },
     loaders: [
       {
         test: /\.ts$/,
-        use: ['ts-loader', 'angular2-template-loader']
+        loader: 'ts-loader'
+      },
+      {
+        test: /\.(html|css)$/,
+        loader: 'raw-loader',
+        options: {
+          esModule: false
+        }
       }
     ],
     urlLoaderOptions: {

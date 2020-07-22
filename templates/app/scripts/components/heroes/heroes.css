@@ -3,7 +3,8 @@
   margin: 0 auto;
   padding: 0 20px 20px;
   border: 1px solid;
-  & h2 {
-    color: blue;
-  }
+}
+
+.heroes h2 {
+  color: blue;
 }
