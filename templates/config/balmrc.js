@@ -1,10 +1,9 @@
-/* eslint-env node */
 const path = require('path');
 const webpack = require('webpack');
 const helpers = require('./helpers');
 
-// Documentation - http://balmjs.com/docs/v2/config/
-// 中文文档 - https://balmjs.com/docs/v2/zh/config/
+// Documentation - https://balm.js.org/docs/config/
+// 中文文档 - https://balm.js.org/docs/zh/config/
 module.exports = {
   server: {
     // proxyConfig: {
